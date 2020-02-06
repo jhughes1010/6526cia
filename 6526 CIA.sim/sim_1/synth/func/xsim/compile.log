@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/6526 CIA/6526 CIA.sim/sim_1/synth/func/xsim/CIA_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CIA
+INFO: [VRFC 10-311] analyzing module TOD
+INFO: [VRFC 10-311] analyzing module glbl

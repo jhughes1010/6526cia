@@ -1,0 +1,327 @@
+$date
+   Wed Feb  5 04:19:39 2020
+$end
+$version
+  2019.2
+$end
+$timescale
+  1ps
+$end
+$scope module CIA_tb $end
+$scope module cia1 $end
+$var wire 1 ! phi2 $end
+$var wire 1 " res_b $end
+$var wire 1 # cs_b $end
+$var wire 1 $ rw $end
+$var wire 4 % rs [3:0] $end
+$var wire 8 & db_in [7:0] $end
+$var reg 8 ' db_out [7:0] $end
+$var wire 8 ( pa_in [7:0] $end
+$var reg 8 ) pa_out [7:0] $end
+$var wire 8 * pb_in [7:0] $end
+$var reg 8 + pb_out [7:0] $end
+$var reg 8 , ddra [7:0] $end
+$var reg 8 - ddrb [7:0] $end
+$var wire 1 . tod $end
+$var reg 8 / cra [7:0] $end
+$var reg 8 0 crb [7:0] $end
+$var wire 1 1 rd $end
+$var wire 1 2 wr $end
+$var wire 32 3 tod_out [31:0] $end
+$scope module tod1 $end
+$var wire 1 " reset_b $end
+$var wire 1 4 Hz50 $end
+$var wire 1 . TOD_clk $end
+$var wire 1 # select_b $end
+$var wire 1 $ rwb $end
+$var wire 1 ! phi2 $end
+$var wire 4 % rs [3:0] $end
+$var reg 32 5 tod_latch [31:0] $end
+$var wire 8 & db_in [7:0] $end
+$var reg 3 6 tod_tick_counter [2:0] $end
+$var reg 32 7 tod [31:0] $end
+$var reg 32 8 alarm [31:0] $end
+$var reg 1 9 tod_run $end
+$var wire 1 : wr $end
+$var wire 1 ; rd $end
+$var wire 1 < c1 $end
+$var wire 1 = c2 $end
+$var wire 1 > c3 $end
+$var wire 1 ? c4 $end
+$var wire 1 @ c5 $end
+$var wire 1 A c6 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+1#
+0$
+b0 %
+b10101010 &
+bx '
+b11111111 (
+bx )
+b0 *
+bx +
+bx ,
+bx -
+0.
+bx /
+bx 0
+01
+02
+bx 3
+x4
+bx 5
+bx 6
+bx 7
+bx 8
+x9
+0:
+0;
+x<
+x=
+x>
+x?
+x@
+xA
+$end
+#50000
+0!
+01
+02
+0:
+0;
+#100000
+1!
+01
+02
+0:
+0;
+#125000
+0"
+#150000
+0!
+b0 '
+b0 )
+b0 +
+b0 ,
+b0 -
+b0 /
+b0 0
+01
+02
+04
+0:
+0;
+#200000
+1!
+01
+02
+0:
+0;
+#250000
+0!
+b0 /
+b0 0
+01
+02
+0:
+0;
+#300000
+1!
+01
+02
+0:
+0;
+#350000
+0!
+b0 /
+b0 0
+01
+02
+0:
+0;
+#375000
+1"
+#400000
+1!
+1.
+01
+02
+0:
+0;
+#405000
+1$
+01
+02
+0:
+0;
+#430000
+0#
+11
+02
+0:
+1;
+#450000
+0!
+01
+02
+0:
+0;
+#480000
+1#
+01
+02
+0:
+0;
+#500000
+1!
+01
+02
+0:
+0;
+#505000
+0$
+b11000111 &
+01
+02
+0:
+0;
+#530000
+0#
+01
+12
+1:
+0;
+#550000
+0!
+01
+02
+0:
+0;
+#580000
+1#
+01
+02
+0:
+0;
+#600000
+1!
+01
+02
+0:
+0;
+#605000
+b1110 %
+b10000000 &
+#630000
+0#
+01
+12
+1:
+0;
+#650000
+0!
+01
+02
+0:
+0;
+#680000
+1#
+01
+02
+0:
+0;
+#700000
+1!
+01
+02
+0:
+0;
+#705000
+b1011 %
+b101 &
+#730000
+0#
+01
+12
+1:
+0;
+#750000
+0!
+01
+02
+0:
+0;
+#780000
+1#
+01
+02
+0:
+0;
+#800000
+1!
+0.
+01
+02
+0:
+0;
+#805000
+b1010 %
+b1000000 &
+#830000
+0#
+01
+12
+1:
+0;
+#850000
+0!
+01
+02
+0:
+0;
+#880000
+1#
+01
+02
+0:
+0;
+#900000
+1!
+01
+02
+0:
+0;
+#905000
+b1001 %
+b10101 &
+#930000
+0#
+01
+12
+1:
+0;
+#950000
+0!
+01
+02
+0:
+0;
+#980000
+1#
+01
+02
+0:
+0;
+#1000000
+1!
+01
+02
+0:
+0;
