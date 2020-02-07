@@ -56,7 +56,7 @@ module CIA_tb();
   
   //Freerunning 1MHz CLK
   always #500 phi=~phi;
-  always #1190tod=~tod;
+  always #50 tod=~tod;
   
    initial begin
      //$dumpfile("out.vcd");

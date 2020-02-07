@@ -11,17 +11,17 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="27180001fs"></ZoomEndTime>
-      <Cursor1Time time="0fs"></Cursor1Time>
+      <ZoomStartTime time="12978000fs"></ZoomStartTime>
+      <ZoomEndTime time="15704001fs"></ZoomEndTime>
+      <Cursor1Time time="19630000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="137"></ValueColumnWidth>
+      <ValueColumnWidth column_width="133"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="23" />
    <wave_markers>
-      <marker time="108000000" label="" />
+      <marker time="55703595" label="" />
    </wave_markers>
    <wvobject fp_name="/CIA_tb/x" type="array">
       <obj_property name="ElementShortName">x[31:0]</obj_property>

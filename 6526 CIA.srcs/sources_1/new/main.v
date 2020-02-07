@@ -47,6 +47,7 @@ module CIA(
     .tod_latch(tod_out),
     .rwb(rw),
     .phi2(phi2),
+//    .db_out(db_out),
     .db_in(db_in)
   );
 /*

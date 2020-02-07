@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Feb  6 04:36:23 2020
+| Date         : Fri Feb  7 04:49:11 2020
 | Host         : a-PC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file CIA_utilization_synth.rpt -pb CIA_utilization_synth.pb
 | Design       : CIA
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  120 |     0 |     20800 |  0.58 |
-|   LUT as Logic          |  120 |     0 |     20800 |  0.58 |
+| Slice LUTs*             |   75 |     0 |     20800 |  0.36 |
+|   LUT as Logic          |   75 |     0 |     20800 |  0.36 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  124 |     0 |     41600 |  0.30 |
-|   Register as Flip Flop |  124 |     0 |     41600 |  0.30 |
+| Slice Registers         |  152 |     0 |     41600 |  0.37 |
+|   Register as Flip Flop |  152 |     0 |     41600 |  0.37 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 1     |          Yes |         Set |            - |
-| 123   |          Yes |       Reset |            - |
+| 0     |          Yes |         Set |            - |
+| 152   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -115,7 +115,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
+| BUFGCTRL   |    3 |     0 |        32 |  9.38 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
@@ -149,17 +149,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  123 |        Flop & Latch |
-| LUT6     |   77 |                 LUT |
+| FDRE     |  152 |        Flop & Latch |
 | OBUF     |   40 |                  IO |
+| LUT6     |   35 |                 LUT |
 | IBUF     |   33 |                  IO |
-| LUT5     |   24 |                 LUT |
-| LUT4     |   18 |                 LUT |
-| LUT2     |   14 |                 LUT |
-| LUT3     |    2 |                 LUT |
-| BUFG     |    2 |               Clock |
-| LUT1     |    1 |                 LUT |
-| FDSE     |    1 |        Flop & Latch |
+| LUT5     |   21 |                 LUT |
+| LUT4     |   15 |                 LUT |
+| LUT3     |    3 |                 LUT |
+| BUFG     |    3 |               Clock |
+| LUT2     |    2 |                 LUT |
+| LUT1     |    2 |                 LUT |
 +----------+------+---------------------+
 
 

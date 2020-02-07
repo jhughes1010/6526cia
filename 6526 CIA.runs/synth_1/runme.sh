@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/6526 CIA/6526 CIA/6526 CIA.runs/synth_1'
+HD_PWD='F:/6526 CIA/6526 CIA.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

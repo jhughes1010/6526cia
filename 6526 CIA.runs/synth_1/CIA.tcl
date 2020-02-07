@@ -22,15 +22,15 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {F:/6526 CIA/6526 CIA/6526 CIA.cache/wt} [current_project]
-set_property parent.project_path {F:/6526 CIA/6526 CIA/6526 CIA.xpr} [current_project]
+set_property webtalk.parent_dir {F:/6526 CIA/6526 CIA.cache/wt} [current_project]
+set_property parent.project_path {F:/6526 CIA/6526 CIA.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {f:/6526 CIA/6526 CIA/6526 CIA.cache/ip} [current_project]
+set_property ip_output_repo {f:/6526 CIA/6526 CIA.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  {F:/6526 CIA/6526 CIA/6526 CIA.srcs/sources_1/new/tod.v}
-  {F:/6526 CIA/6526 CIA/6526 CIA.srcs/sources_1/new/main.v}
+  {F:/6526 CIA/6526 CIA.srcs/sources_1/new/tod.v}
+  {F:/6526 CIA/6526 CIA.srcs/sources_1/new/main.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -40,8 +40,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{F:/6526 CIA/6526 CIA/6526 CIA.srcs/constrs_1/new/constraints.xdc}}
-set_property used_in_implementation false [get_files {{F:/6526 CIA/6526 CIA/6526 CIA.srcs/constrs_1/new/constraints.xdc}}]
+read_xdc {{F:/6526 CIA/6526 CIA.srcs/constrs_1/new/constraints.xdc}}
+set_property used_in_implementation false [get_files {{F:/6526 CIA/6526 CIA.srcs/constrs_1/new/constraints.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
