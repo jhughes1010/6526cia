@@ -4,6 +4,7 @@ Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 966b36d710
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3283] element index 31 into 'tod' is out of bounds [F:/6526 CIA/6526 CIA.srcs/sources_1/new/tod.v:136]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

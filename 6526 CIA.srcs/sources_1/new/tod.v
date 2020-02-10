@@ -35,7 +35,8 @@ module TOD(
 );
   //INTERNAL REGISTERS
   reg [2:0] tod_tick_counter;
-  reg [31:0] tod;
+  reg [28:0] tod;
+  reg pm;
   reg [31:0] alarm;
   reg tod_run;
   
@@ -61,10 +62,9 @@ module TOD(
     if(!reset_b)
       begin
         tod_run<=1;
-        tod_tick_counter=3'h6;
-        tod<=32'h01000000;
-        //tod_latch<=32'h01000000;
-        //alarm <=32'h00000000;
+        tod_tick_counter<=3'h6;
+        tod<=29'h01000000;
+        pm<=0;
       end
     else if (tod_run)
       begin
@@ -77,16 +77,7 @@ module TOD(
           else
             tod_tick_counter=3'h6;
             
-          //Add carry bit from prior stage
-                   
-          
-                        
-          
-          
-          
-      
-      
-          //reset to 0 if max digit is reached
+          //Add carry bit from prior stage or reset to 0 if max digit is reached
           if(c1)
             tod[3:0]<=4'd0;
           else
@@ -96,14 +87,12 @@ module TOD(
             tod[11:8]<=4'd0;
           else
             tod[11:8]<=tod[11:8]+c1;
-            
-             
+        
           if(c3)
             tod[15:12]<=4'd0;
           else
             tod[15:12]<=tod[15:12]+c2;
-            
-                        
+                            
           if(c4)
             tod[19:16]<=4'd0;
           else
@@ -113,21 +102,19 @@ module TOD(
             tod[23:20]<=4'd0;
           else
             tod[23:20]<=tod[23:20]+c4;
-            
-                        
+                          
           if(c6)
             tod[27:24]<=4'd0;
           else
             tod[27:24]<=tod[27:24]+c5;          
                     
           // if 13 hours set to 1
-          if(tod[28:24]>=5'h13)
-          tod[28:24]<=5'h01;
+          if(tod[28:0]>=29'h12595909)
+            tod[28:24]<=5'h01;
           
           //if 12000000 then toggle pm flag
-          if(tod[28:0]==29'h12000000) tod[31]<=~tod[31];
-
-
+          if(tod[28:0]==29'h11595909) 
+            pm<=~pm;
         end
         end
         
@@ -146,7 +133,8 @@ module TOD(
           4'ha: tod[23:16]<=db_in;
           4'hb: 
             begin
-              tod[31:24]<=db_in;
+              tod[28:24]<=db_in[4:0];
+              pm<= db_in[7];
               tod_run<=0;
             end
         endcase
@@ -155,7 +143,7 @@ module TOD(
         begin
           case(rs)
             4'hb: 
-                tod_latch=tod;
+                tod_latch[31:0]<={pm,2'b00,tod[28:0]};
           endcase
           end
        end

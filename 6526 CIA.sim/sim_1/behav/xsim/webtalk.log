@@ -2,8 +2,8 @@
 # Webtalk v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri Feb  7 04:31:27 2020
-# Process ID: 2700
+# Start of session at: Mon Feb 10 04:42:16 2020
+# Process ID: 5904
 # Current directory: F:/6526 CIA/6526 CIA.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source F:/6526 CIA/6526 CIA.sim/sim_1/behav/xsim/xsim.dir/CIA_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: F:/6526 CIA/6526 CIA.sim/sim_1/behav/xsim/webtalk.log
@@ -11,4 +11,4 @@
 #-----------------------------------------------------------
 source F:/6526 -notrace
 couldn't read file "F:/6526": permission denied
-INFO: [Common 17-206] Exiting Webtalk at Fri Feb  7 04:31:27 2020...
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 10 04:42:16 2020...

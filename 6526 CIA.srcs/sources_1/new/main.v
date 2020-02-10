@@ -32,9 +32,7 @@ module CIA(
 
   wire  rd = !cs_b & rw;
   wire  wr = !cs_b & !rw;
-  //wire  reset=~res_b;
   wire	[31:0] tod_out;
-  //wire [15:0] timer_A;
   
   //Attach modules
   TOD tod1(
@@ -47,7 +45,6 @@ module CIA(
     .tod_latch(tod_out),
     .rwb(rw),
     .phi2(phi2),
-//    .db_out(db_out),
     .db_in(db_in)
   );
 /*

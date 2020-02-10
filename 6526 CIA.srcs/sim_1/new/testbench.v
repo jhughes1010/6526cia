@@ -85,7 +85,7 @@ module CIA_tb();
      //set 50Hz
 //     setRSwrite(4'he,8'h80);
      
-     setRSwrite(4'hb,8'h11);
+     setRSwrite(4'hb,8'h12);
      setRSwrite(4'ha,8'h59);
      setRSwrite(4'h9,8'h59);
      setRSwrite(4'h8,8'h08);
