@@ -106,7 +106,9 @@ module TOD(
           if(c6)
             tod[27:24]<=4'd0;
           else
-            tod[27:24]<=tod[27:24]+c5;          
+            tod[27:24]<=tod[27:24]+c5; 
+            
+          //TODO: need to set 10s place on hours         
                     
           // if 13 hours set to 1
           if(tod[28:0]>=29'h12595909)

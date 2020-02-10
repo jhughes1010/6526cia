@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Feb 10 05:28:31 2020
+| Date         : Mon Feb 10 05:39:14 2020
 | Host         : a-PC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file CIA_utilization_synth.rpt -pb CIA_utilization_synth.pb
 | Design       : CIA
@@ -154,11 +154,11 @@ Table of Contents
 | LUT6     |   34 |                 LUT |
 | IBUF     |   33 |                  IO |
 | LUT5     |   23 |                 LUT |
-| LUT4     |   16 |                 LUT |
+| LUT4     |   17 |                 LUT |
 | BUFG     |    3 |               Clock |
 | LUT3     |    2 |                 LUT |
 | LUT2     |    2 |                 LUT |
-| LUT1     |    2 |                 LUT |
+| LUT1     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

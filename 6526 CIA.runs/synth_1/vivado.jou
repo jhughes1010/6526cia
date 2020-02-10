@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Feb 10 05:27:39 2020
-# Process ID: 5740
+# Start of session at: Mon Feb 10 05:38:22 2020
+# Process ID: 4180
 # Current directory: F:/6526 CIA/6526 CIA.runs/synth_1
 # Command line: vivado.exe -log CIA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CIA.tcl
 # Log file: F:/6526 CIA/6526 CIA.runs/synth_1/CIA.vds
